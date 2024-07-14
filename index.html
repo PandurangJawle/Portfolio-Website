@@ -59,47 +59,6 @@
 }
 
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
 /* project image zoom effect */
 
 .zoom-effect {
@@ -162,42 +121,6 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Pandurang Jawle</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  '
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
 			            
 		            </div>
 		          </div>
@@ -420,7 +343,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://calculatoruseonline.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/calculator.png');">
+              <a href="https://calculatoruseonline.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/calculator.png'); border-radius: 5px;">
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -433,7 +356,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href=" https://registration-form-validation1.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/Form.png');">
+              <a href=" https://registration-form-validation1.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/Form.png'); border-radius: 5px;">
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -445,7 +368,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://amezon-clone.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/Amazon\ clone.png');">
+              <a href="https://amezon-clone.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/Amazon\ clone.png'); border-radius: 5px;">
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -462,7 +385,7 @@
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://studysyncclone1.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/study\ sync\ clone.png');">
+				<a href="https://studysyncclone1.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/study\ sync\ clone.png'); border-radius: 5px;">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
@@ -474,7 +397,7 @@
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://strong-cranachan-acdc.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/ACDC\ PROJECT.png');">
+				<a href="https://strong-cranachan-acdc.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/ACDC\ PROJECT.png'); border-radius: 5px;">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
